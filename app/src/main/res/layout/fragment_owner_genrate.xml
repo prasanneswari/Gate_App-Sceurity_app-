@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7fa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:hint="Enter The Name"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/owne_name"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textAutoComplete"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:hint="Enter The Number"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/owne_number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_user_type"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_validety"></Spinner>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:hint="Message Receipent"
+            android:background="@drawable/rounded_edittext"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbackground"
+            android:layout_marginTop="10dp"
+            android:text="SEND OTP"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>
